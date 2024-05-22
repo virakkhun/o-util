@@ -8,7 +8,7 @@ importers:
 
   .:
     dependencies:
-      o-utils:
+      o-util:
         specifier: workspace:^
         version: link:packages/o-utils
     devDependencies:
