@@ -1,5 +1,5 @@
+import { nonExistKeyValuePairOf } from "o-utils";
 import { expect, test } from "vitest";
-import { nonExistKeyValuePairOf } from "../../src";
 
 const o = {
   frameword: "sveltekit",

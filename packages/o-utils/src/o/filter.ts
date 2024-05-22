@@ -1,7 +1,7 @@
 import { isO } from "../internal/is-o";
 
 /**
- * @function removePropsIf
+ * @function filter
  * @description remove those props if its value match cond
  * @returns Partial<T>
  *
@@ -16,7 +16,7 @@ import { isO } from "../internal/is-o";
  *  }
  * }
  *
- * const result = removePropsIf(o, () => null)
+ * const result = filter(o, () => null)
  * // result
  * {
  *  age: 20,
@@ -27,20 +27,20 @@ import { isO } from "../internal/is-o";
  * }
  * ```
  **/
-export function removePropsIf<T extends Record<string, unknown>>(
+export function filter<T extends Record<string, unknown>>(
   o: T,
   predicator: (v: T[keyof T]) => boolean,
 ): Partial<T> {
   return Object.entries(o)
     .filter(([_, v]) =>
       !!v && isO(v)
-        ? Object.values(removePropsIf(<T>v, predicator)).length > 0
+        ? Object.values(filter(<T>v, predicator)).length > 0
         : predicator(<T[keyof T]>v),
     )
     .reduce(
       (p, [k, v]) =>
         Object.assign(p, {
-          [k]: !!v && isO(v) ? removePropsIf(<T>v, predicator) : v,
+          [k]: !!v && isO(v) ? filter(<T>v, predicator) : v,
         }),
       {},
     );

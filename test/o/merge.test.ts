@@ -1,5 +1,5 @@
+import { merge } from "o-utils";
 import { expect, test } from "vitest";
-import { replace } from "../../src";
 
 const o = {
   frameword: "sveltekit",
@@ -16,7 +16,7 @@ const d = {
   },
 };
 test("should return api.version to equal 204", () => {
-  const newProps = replace(o).with(d);
+  const newProps = merge(o).with(d);
   expect(newProps.api.version).toEqual(204);
 });
 
@@ -24,11 +24,11 @@ const e = {
   api: {},
 };
 test("should return api with empty value", () => {
-  const newProps = replace(o).with(e);
+  const newProps = merge(o).with(e);
   expect(newProps.api).toMatchObject({});
 });
 
 test("should return the object of o while both objects are equal", () => {
-  const obj = replace(d).with(d);
+  const obj = merge(d).with(d);
   expect(obj).toStrictEqual(d);
 });

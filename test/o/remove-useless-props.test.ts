@@ -1,5 +1,5 @@
+import { removeUselessProps } from "o-utils";
 import { expect, test } from "vitest";
-import { removeUselessProps } from "../../src";
 
 const o = {
   name: null,

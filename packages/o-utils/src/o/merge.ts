@@ -22,17 +22,17 @@ import { entries } from "../internal/entries";
  * }
  * ```
  *
- * const result = replace(o).with(d)
+ * const result = merge(o).with(d)
  * console.log({
  *  frameword: 'sveltekit',
  *  version: 1,
  *  api: {
  *    baseUrl: 'https://json-placeholder.com',
- *    version: 204, // replaced
+ *    version: 204, // merged
  *  }
  * })
  **/
-export function replace<T extends Record<string, any>>(o: T) {
+export function merge<T extends Record<string, any>>(o: T) {
   return {
     with: <D extends Record<string, any>>(d: D): T => {
       return entries(o)
@@ -42,7 +42,7 @@ export function replace<T extends Record<string, any>>(o: T) {
         .reduce<T>(
           (p, [k, v]) =>
             Object.assign(p, {
-              [k]: typeof v === "object" ? replace(v).with(d[k]) : v,
+              [k]: typeof v === "object" ? merge(v).with(d[k]) : v,
             }),
           <T>{},
         );

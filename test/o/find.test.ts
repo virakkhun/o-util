@@ -1,5 +1,5 @@
+import { find } from "o-utils";
 import { expect, test } from "vitest";
-import { find } from "../../src";
 
 const o = {
   name: "Doe",

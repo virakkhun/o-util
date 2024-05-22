@@ -1,0 +1,27 @@
+{
+  "name": "o-utils",
+  "version": "1.0.0",
+  "description": "collection of object utilities",
+  "type": "module",
+  "publishConfig": {
+    "types": "dist/index.d.ts",
+    "typings": "dist/index.d.ts",
+    "main": "dist/index.cjs",
+    "module": "dist/index.mjs"
+  },
+  "main": "src/index.ts",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "keywords": [
+    "object",
+    "utils",
+    "javascript",
+    "js",
+    "array"
+  ],
+  "author": "Virak Khun",
+  "license": "MIT"
+}

@@ -1,5 +1,5 @@
+import { keys } from "o-utils";
 import { expect, test } from "vitest";
-import { keys } from "../../src";
 
 test(`should return a list of expect keys ["name", "age", "title", "experience"]`, () => {
   const object = {
