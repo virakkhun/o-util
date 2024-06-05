@@ -1,0 +1,49 @@
+.md-wrapper h1 {
+  @apply text-4xl mb-6;
+}
+
+.md-wrapper h2 {
+  @apply text-3xl mb-4;
+}
+
+.md-wrapper h3 {
+  @apply text-xl mb-2;
+}
+
+.md-wrapper h4 {
+  @apply text-base mb-2;
+}
+
+.md-wrapper h5 {
+  @apply text-sm;
+}
+
+.md-wrapper p {
+  @apply text-base my-4 text-gray-300;
+}
+
+.md-wrapper blockquote {
+  @apply border-l-4 border-l-gray-500 pl-4;
+}
+
+.md-wrapper hr {
+  @apply my-8;
+}
+
+.md-wrapper p a[href*="https"] {
+  @apply underline underline-offset-1 text-green-700;
+}
+
+.md-wrapper p code {
+  @apply p-1 rounded-md text-sm;
+  background: hsl(220, 13%, 18%);
+}
+
+.md-wrapper p a[href*="/doc"] {
+  @apply mt-4 border border-cyan-400 rounded-md px-6 py-2 float-end hover:bg-gray-800;
+}
+
+.md-wrapper p a[href*="/doc"]::after {
+  content: "→";
+  @apply pl-3 text-cyan-500 translate-y-1.5 text-sm;
+}
