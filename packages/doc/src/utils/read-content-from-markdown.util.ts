@@ -4,10 +4,7 @@ import path from "path";
 
 const rootDir = import.meta.env.PROD ? import.meta.env.CWD : process.cwd();
 
-const CONTENT_ROOT_DIR = path.join(
-  rootDir,
-  `${import.meta.env.PROD ? "/contents" : "/public/contents"}`,
-);
+const CONTENT_ROOT_DIR = path.join(rootDir, "/src/contents");
 
 export async function readContentFromMarkdown(filename: string) {
   try {
