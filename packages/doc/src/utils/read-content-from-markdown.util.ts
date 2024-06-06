@@ -15,7 +15,8 @@ export async function readContentFromMarkdown(filename: string) {
     const str = buf.toString();
     const html = await parseAsync(str);
     return html;
-  } catch (_) {
+  } catch (err) {
+    console.error(err);
     throw new Error("can't read file");
   }
 }
