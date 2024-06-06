@@ -15,6 +15,8 @@ export const route = {
 export default function Index() {
   const snippet = createAsync(() => getSnippet());
 
+  console.log(import.meta.env);
+
   return (
     <>
       <Title>o-util</Title>
