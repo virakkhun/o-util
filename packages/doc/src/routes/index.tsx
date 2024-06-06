@@ -2,6 +2,7 @@ import { A, cache, createAsync } from "@solidjs/router";
 import { CodeSnippet } from "~/components/code-snippet";
 import { readContentFromMarkdown } from "~/utils/read-content-from-markdown.util";
 import { Title } from "@solidjs/meta";
+import { exec } from "child_process";
 
 const getSnippet = cache(async () => {
   "use server";
@@ -15,7 +16,9 @@ export const route = {
 export default function Index() {
   const snippet = createAsync(() => getSnippet());
 
-  console.log(import.meta.env);
+  exec("ls -l", (exp, out, err) => {
+    console.log({ exp, out, err });
+  });
 
   return (
     <>

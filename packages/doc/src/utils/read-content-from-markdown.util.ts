@@ -2,11 +2,11 @@ import { readFile } from "fs/promises";
 import { parseAsync } from "mdx-util";
 import path from "path";
 
-const isProd = import.meta.env.NODE_ENV === "production";
+const rootDir = import.meta.env.PROD ? import.meta.env.CWD : process.cwd();
 
 const CONTENT_ROOT_DIR = path.join(
-  process.cwd(),
-  `${isProd ? "/contents" : "/public/contents"}`,
+  rootDir,
+  `${import.meta.env.PROD ? "/contents" : "/public/contents"}`,
 );
 
 export async function readContentFromMarkdown(filename: string) {
