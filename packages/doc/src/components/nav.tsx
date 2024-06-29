@@ -3,7 +3,7 @@ import { For } from "solid-js";
 
 const routes = [
   { name: "concat", link: "/doc/concat?content=concat" },
-  { name: "fitler", link: "/doc/filter?content=filter" },
+  { name: "filter", link: "/doc/filter?content=filter" },
   { name: "find", link: "/doc/find?content=find" },
   { name: "keys", link: "/doc/keys?content=keys" },
   { name: "merge", link: "/doc/merge?content=merge" },
