@@ -1,13 +1,14 @@
+export default `
 # filter
 
-`filter` let you filter out value that you wish to remove inside the object.
+]filter] let you filter out value that you wish to remove inside the object.
 
 ### example
 
-let see the example below, we want to remove `@props` that contain value `true`.
-in this case, there are two `@props`
+let see the example below, we want to remove ]@props] that contain value ]true].
+in this case, there are two ]@props]
 
-```ts
+]]]ts
 import { filter } from 'o-util'
 
 const person = {
@@ -32,8 +33,9 @@ console.log(result)
   yearly: '200k',
  }
 }
-```
+]]]
 
 [github](https://github.com/virakkhun/o-utils/blob/main/packages/o-utils/src/o/filter.ts)
 
 [find](/doc/find?content=find)
+`

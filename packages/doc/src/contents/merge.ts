@@ -1,3 +1,4 @@
+export default `
 # merge
 
 let you merge two object into one.
@@ -6,7 +7,7 @@ let you merge two object into one.
 
 let you merge two object into another one and return new object.
 
-```ts
+]]]ts
 import { merge } from "o-util";
 
 const o = {
@@ -36,6 +37,9 @@ console.log(result);
     version: 204, // merged
   },
 }
-```
+]]]
 
 [github](https://github.com/virakkhun/o-utils/blob/main/packages/o-utils/src/o/merge.ts)
+
+[remove-useless-props](/doc/remove-useless-props)
+`;

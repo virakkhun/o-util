@@ -1,6 +1,7 @@
+export default `
 # Getting started
 
-`o-util` is collection of utilities function to interact with object.
+]o-util] is collection of utilities function to interact with object.
 
 ## Installation
 
@@ -8,20 +9,21 @@ Choose your favorite package manager either **npm**, **yarn**, **pnpm**.
 
 > pnpm:
 
-```bash
+]]]bash
 pnpm add mdx-util
-```
+]]]
 
 > yarn:
 
-```bash
+]]]bash
 yarn add mdx-util
-```
+]]]
 
 > npm:
 
-```bash
+]]]bash
 npm add mdx-util
-```
+]]]
 
 [concat](/doc/concat?content=concat)
+`

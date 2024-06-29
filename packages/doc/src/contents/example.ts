@@ -1,4 +1,5 @@
-```ts
+export default `
+]]]ts
 import { filter } from "o-util";
 
 const o = {
@@ -20,4 +21,5 @@ console.log(result);
     nothing: undefined,
   }
 }
-```
+]]]
+`

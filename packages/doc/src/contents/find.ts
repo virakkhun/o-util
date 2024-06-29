@@ -1,12 +1,13 @@
+export default `
 # find
 
-`find` let you find the value inside the object recursively by providing `[key, value]`.
+]find] let you find the value inside the object recursively by providing ][key, value]].
 
 ### example
 
-let say we want to find `@prop` name and its value `Doe`
+let say we want to find ]@prop] name and its value ]Doe]
 
-```ts
+]]]ts
 import { find } from 'o-util'
 
 const o = {
@@ -24,8 +25,9 @@ console.log(findNameDoe)
 {
  name: 'Doe'
 }
-```
+]]]
 
 [github](https://github.com/virakkhun/o-utils/blob/main/packages/o-utils/src/o/find.ts)
 
 [keys](/doc/keys?content=keys)
+`

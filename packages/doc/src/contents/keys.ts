@@ -1,12 +1,13 @@
+export default `
 # keys
 
-`keys` return the list of all the keys inside the object.
+]keys] return the list of all the keys inside the object.
 
 ### example
 
 let say we want to get all the keys inside the object.
 
-```ts
+]]]ts
 import { keys } from 'o-util'
 
 const o = {
@@ -22,8 +23,9 @@ const keys = keys(o)
 console.log(kes)
 // result
 ["name", "age", "title", "experience"]
-```
+]]]
 
 [github](https://github.com/virakkhun/o-utils/blob/main/packages/o-utils/src/o/keys.ts)
 
 [merge](/doc/merge?content=merge)
+`

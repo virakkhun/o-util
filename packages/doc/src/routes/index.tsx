@@ -1,19 +1,20 @@
 import { A, cache, createAsync } from "@solidjs/router";
 import { CodeSnippet } from "~/components/code-snippet";
-import { readContentFromMarkdown } from "~/utils/read-content-from-markdown.util";
 import { Title } from "@solidjs/meta";
+import example from "~/contents/example";
+import { useStringToMd } from "~/utils/str-to-markdown";
 
-const getSnippet = cache(async () => {
+const getContent = cache(() => {
   "use server";
-  return readContentFromMarkdown("example.md");
-}, "snippet");
+  return useStringToMd(example);
+}, "home-page");
 
 export const route = {
-  load: getSnippet,
+  load: () => getContent(),
 };
 
 export default function Index() {
-  const snippet = createAsync(() => getSnippet());
+  const snippet = createAsync(() => getContent());
 
   return (
     <>
