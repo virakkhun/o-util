@@ -1,4 +1,4 @@
-import { nonExistKeyValuePairOf } from "o-utils";
+import { nonExistKeyValuePairOf } from "o-util";
 import { expect, test } from "vitest";
 
 const o = {

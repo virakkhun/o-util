@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { concat } from "o-utils";
+import { concat } from "o-util";
 
 const husband = {
   age: 20,

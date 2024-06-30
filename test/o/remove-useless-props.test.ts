@@ -1,4 +1,4 @@
-import { removeUselessProps } from "o-utils";
+import { removeUselessProps } from "o-util";
 import { expect, test } from "vitest";
 
 const o = {

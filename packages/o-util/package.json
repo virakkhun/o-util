@@ -1,0 +1,35 @@
+{
+  "name": "o-util",
+  "version": "1.0.1",
+  "description": "collection of object utilities",
+  "type": "module",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "keywords": [
+    "object",
+    "utils",
+    "javascript",
+    "js",
+    "array"
+  ],
+  "author": "Virak Khun",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virakkhun/o-util"
+  },
+  "bugs": {
+    "url": "https://github.com/virakkhun/o-util/issues"
+  },
+  "homepage": "https://github.com/virakkhun/o-util#readme"
+}

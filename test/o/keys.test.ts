@@ -1,4 +1,4 @@
-import { keys } from "o-utils";
+import { keys } from "o-util";
 import { expect, test } from "vitest";
 
 test(`should return a list of expect keys ["name", "age", "title", "experience"]`, () => {

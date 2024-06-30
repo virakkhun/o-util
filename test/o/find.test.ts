@@ -1,4 +1,4 @@
-import { find } from "o-utils";
+import { find } from "o-util";
 import { expect, test } from "vitest";
 
 const o = {

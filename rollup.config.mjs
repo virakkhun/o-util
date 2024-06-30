@@ -7,11 +7,11 @@ import esbuild from "rollup-plugin-esbuild";
 /**
  * @param {string} pkg
  */
-const entry = (_) => `./packages/o-utils/src/index.ts`;
+const entry = (_) => `./packages/o-util/src/index.ts`;
 /**
  * @param {string} pkg
  */
-const output = (_) => `./packages/o-utils/dist`;
+const output = (_) => `./packages/o-util/dist`;
 
 /**
  * @type {{entry: string, output: string, type: 'js' | 'dts', external?: string[]}[]}

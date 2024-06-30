@@ -1,5 +1,5 @@
 {
-  "name": "monorepo",
+  "name": "monorepo@o-util",
   "version": "1.0.0",
   "description": "collection of object utilities",
   "type": "module",
@@ -8,7 +8,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "o-util": "workspace:^"
+    "o-util": "^1.0.1"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.8",

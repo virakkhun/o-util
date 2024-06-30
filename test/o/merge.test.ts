@@ -1,4 +1,4 @@
-import { merge } from "o-utils";
+import { merge } from "o-util";
 import { expect, test } from "vitest";
 
 const o = {

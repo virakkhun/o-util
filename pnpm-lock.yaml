@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       o-util:
-        specifier: workspace:^
-        version: link:packages/o-utils
+        specifier: ^1.0.1
+        version: link:packages/o-util
     devDependencies:
       '@rollup/plugin-commonjs':
         specifier: ^25.0.8
@@ -74,7 +74,7 @@ importers:
         specifier: ^1.29.0
         version: 1.29.0
 
-  packages/o-utils: {}
+  packages/o-util: {}
 
 packages:
 
