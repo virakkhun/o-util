@@ -11,7 +11,7 @@ const o = {
   },
 };
 
-const result = filter(o, () => null);
+const result = filter(o, (v) => v !== null);
 console.log(result);
 // result
 {
@@ -22,4 +22,4 @@ console.log(result);
   }
 }
 ]]]
-`
+`;
