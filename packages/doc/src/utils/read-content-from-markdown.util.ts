@@ -1,5 +1,5 @@
 import { readFile } from "fs/promises";
-import { parseAsync } from "mdx-util";
+import { parseAsync } from "mdx-util/node";
 import path from "path";
 
 const rootDir = import.meta.env.PROD ? import.meta.env.CWD : process.cwd();
